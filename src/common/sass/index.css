@@ -1,0 +1,394 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* custom */
+a {
+  color: #7e8c8d;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+* {
+  box-sizing: border-box; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  color: #dfdfe0;
+  background: #334066 url("../images/background.png") 0 0/100% no-repeat;
+  overflow: hidden; }
+
+.flex {
+  display: flex;
+  flex: 1;
+  flex-direction: row; }
+
+#root {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.App {
+  display: flex;
+  flex: 1;
+  position: relative;
+  margin: 40px; }
+
+.h1 {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  text-shadow: 0 0 5px #26B0FB; }
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 50px;
+  color: #26B0FB;
+  background: url("../images/title.png") 0 0/100% no-repeat;
+  font-size: 21px; }
+
+.table {
+  width: 100%;
+  font-size: 12px; }
+  .table thead th {
+    padding: 2px 15px;
+    font-size: 18px;
+    text-shadow: 0 0 5px #26B0FB; }
+
+.normal tr td {
+  padding: 10px 15px;
+  background: #1C2A40; }
+
+.normal .sep-row {
+  height: 15px; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.pie {
+  display: flex;
+  flex: 1;
+  width: 100%; }
+
+.pieChart {
+  height: 100%; }
+
+.currentYear {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  width: 560px;
+  height: 500px; }
+  .currentYear .wrapper {
+    display: flex;
+    margin-top: 30px;
+    width: 531px;
+    height: 136px;
+    background: url("../images/currentYear.png") 0 0/100% no-repeat; }
+    .currentYear .wrapper .parent {
+      padding: 20px 0 20px 20px;
+      width: 160px; }
+      .currentYear .wrapper .parent .name {
+        font-size: 18px; }
+        .currentYear .wrapper .parent .name span {
+          margin-left: 6px;
+          font-size: 14px; }
+      .currentYear .wrapper .parent .boxOffice {
+        margin-top: 25px;
+        font-size: 18px; }
+    .currentYear .wrapper .child {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      padding: 30px 0; }
+      .currentYear .wrapper .child .item {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding-left: 8px; }
+        .currentYear .wrapper .child .item .name {
+          font-size: 15px; }
+          .currentYear .wrapper .child .item .name span {
+            margin-left: 2px;
+            font-size: 13px; }
+        .currentYear .wrapper .child .item .boxOffice {
+          margin-top: 19px; }
+    .currentYear .wrapper .name span {
+      color: #899ba9;
+      font-weight: bold; }
+    .currentYear .wrapper .boxOffice {
+      color: #27c37b;
+      font-weight: bold; }
+    .currentYear .wrapper .proportion {
+      margin-top: 10px;
+      color: #ffce6a;
+      font-size: 16px;
+      font-weight: bold; }
+
+.currentYear4Month {
+  display: flex;
+  flex: 1;
+  flex-direction: row; }
+
+.cinemaRank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  width: 610px;
+  height: 345px; }
+  .cinemaRank .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%; }
+    .cinemaRank .wrapper .inner {
+      margin-top: 20px;
+      overflow: hidden; }
+      .cinemaRank .wrapper .inner table {
+        transition: all .5s; }
+
+.top-1 td:first-child {
+  border-left: 4px solid #E73120; }
+
+.top-1 td:last-child {
+  border-radius: 0 4px 4px 0; }
+
+.top-2 td:first-child {
+  border-left: 4px solid #FB652B; }
+
+.top-2 td:last-child {
+  border-radius: 0 4px 4px 0; }
+
+.top-3 td:first-child {
+  border-left: 4px solid #E5A649; }
+
+.top-3 td:last-child {
+  border-radius: 0 4px 4px 0; }
+
+.top-4 td:first-child {
+  border-left: 4px solid #53B071; }
+
+.top-4 td:last-child {
+  border-radius: 0 4px 4px 0; }
+
+.top-5 td:first-child {
+  border-left: 4px solid #2C9AF0; }
+
+.top-5 td:last-child {
+  border-radius: 0 4px 4px 0; }
+
+.movieRank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  width: 640px;
+  height: 345px; }
+  .movieRank .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%; }
+    .movieRank .wrapper .inner {
+      margin-top: 20px;
+      overflow: hidden; }
+      .movieRank .wrapper .inner table {
+        transition: all .5s; }
+
+.yueyinghuiRank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  width: 650px;
+  height: 270px; }
+  .yueyinghuiRank .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%; }
+    .yueyinghuiRank .wrapper .inner {
+      margin-top: 20px;
+      overflow: hidden; }
+      .yueyinghuiRank .wrapper .inner table {
+        transition: all .5s; }
+
+.yueyinghui tr td {
+  padding: 0 15px;
+  color: #899ba9; }
+
+.yueyinghui .sep-row {
+  height: 10px; }
+
+.yueyinghui .serialNumber {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background: #2C9AF0;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 10px; }
+
+.map {
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  margin-left: -445px;
+  width: 900px;
+  height: 700px; }
+
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.poster {
+  position: absolute;
+  animation: zoom 1.5s infinite;
+  border: 1px solid #fff;
+  opacity: 0; }
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+    opacity: 1; }
+  40% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.2);
+    opacity: 0; } }
+
+.welcomePage {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: RGBA(41, 60, 85, 1); }
+
+.text {
+  margin-top: 30px; }
+
+.boxOfficePie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 320px;
+  top: 355px;
+  width: 280px;
+  height: 310px; }
+
+.playbillPie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 355px;
+  width: 280px;
+  height: 310px; }
+
+.totalPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 140px;
+  margin-left: -180px;
+  width: 360px; }
+  .totalPrice .date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    color: #fff;
+    text-shadow: 0 0 5px #26B0FB; }
+    .totalPrice .date img {
+      margin-right: 5px; }
+  .totalPrice .total {
+    margin-top: 60px;
+    font-size: 40px;
+    color: RGBA(223, 247, 91, 1); }
+    .totalPrice .total em {
+      margin-right: 10px;
+      font-style: normal;
+      color: #fff; }

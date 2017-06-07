@@ -1,0 +1,30 @@
+.map {
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  margin-left: -445px;
+  width: 900px;
+  height: 700px; }
+
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.poster {
+  position: absolute;
+  animation: zoom 1.5s infinite;
+  border: 1px solid #fff;
+  opacity: 0; }
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+    opacity: 1; }
+  40% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.2);
+    opacity: 0; } }

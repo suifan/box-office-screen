@@ -1,0 +1,43 @@
+@import "../variable.sass"
+
+.yueyinghuiRank
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: absolute
+  top: 70px
+  right: 10px
+  width: 650px
+  height: 270px
+  //background: rgba(0, 0, 0, .2)
+
+  .wrapper
+    display: flex
+    flex-direction: column
+    margin-top: 30px
+    width: 100%
+
+    .inner
+      margin-top: 20px
+      overflow: hidden
+
+      table
+        transition: all .5s
+
+.yueyinghui
+  tr
+    td
+      padding: 0 15px
+      color: $color-content
+  .sep-row
+    height: 10px
+  .serialNumber
+    display: inline-block
+    width: 20px
+    height: 20px
+    color: #fff
+    background: $mask-border-5
+    text-align: center
+    line-height: 20px
+    vertical-align: middle
+    border-radius: 10px

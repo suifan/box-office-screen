@@ -1,0 +1,35 @@
+@import "../variable.sass"
+@import "../mixin.sass"
+
+.totalPrice
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: absolute
+  left: 50%
+  top: 140px
+  margin-left: -180px
+  width: 360px
+  //background: rgba(0, 0, 0, .2)
+
+  .date
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    font-size: 21px
+    color: #fff
+    @include text-shadow
+
+    img
+      margin-right: 5px
+
+  .total
+    margin-top: 60px
+    font-size: 40px
+    color: RGBA(223, 247, 91, 1.00)
+
+    em
+      margin-right: 10px
+      font-style: normal
+      color: #fff

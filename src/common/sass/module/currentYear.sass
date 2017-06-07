@@ -1,0 +1,69 @@
+@import "../variable.sass"
+
+.currentYear
+  display: flex
+  align-items: center
+  flex-direction: column
+  position: absolute
+  top: 70px
+  left: 10px
+  width: 560px
+  height: 500px
+  //background: rgba(0, 0, 0, .2)
+
+  .wrapper
+    display: flex
+    margin-top: 30px
+    width: 531px
+    height: 136px
+    background: url("../images/currentYear.png") 0 0 / 100% no-repeat
+
+    .parent
+      padding: 20px 0 20px 20px
+      width: 160px
+
+      .name
+        font-size: 18px
+        span
+          margin-left: 6px
+          font-size: 14px
+      .boxOffice
+        margin-top: 25px
+        font-size: 18px
+
+    .child
+      display: flex
+      flex-direction: row
+      flex: 1
+      padding: 30px 0
+
+      .item
+        display: flex
+        flex: 1
+        flex-direction: column
+        padding-left: 8px
+
+        .name
+          font-size: 15px
+          span
+            margin-left: 2px
+            font-size: 13px
+        .boxOffice
+          margin-top: 19px
+
+    .name span
+      color: $color-content
+      font-weight: bold
+    .boxOffice
+      color: $color-boxOffice
+      font-weight: bold
+    .proportion
+      margin-top: 10px
+      color: $color-proportion
+      font-size: 16px
+      font-weight: bold
+
+.currentYear4Month
+  display: flex
+  flex: 1
+  flex-direction: row

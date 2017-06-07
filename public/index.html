@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>数据实时监控</title>
+    <meta name="viewport" content="width=1920">
+    <script>
+      var config = {
+        cycle: 500000,
+        sildeTime: 5000,
+        pieToggleTime: 3000,
+        url: {
+          total: 'http://www.easy-mock.com/mock/5934f07e91470c0ac101056b/sreen/total',
+          map: 'http://dev.com:8080/saas_ms/resources/plugins/echarts/map/json/country/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD.json',
+          currentYear: 'http://www.easy-mock.com/mock/5934f07e91470c0ac101056b/sreen/currentYear',
+          currentYear4Month: 'http://www.easy-mock.com/mock/5934f07e91470c0ac101056b/sreen/currentYear4Month',
+          top10Cinema: 'http://www.easy-mock.com/mock/5934f07e91470c0ac101056b/sreen/top10Cinema',
+          top10Movie: 'http://www.easy-mock.com/mock/5934f07e91470c0ac101056b/sreen/top10Movie',
+          boxOfficeMap: 'http://www.easy-mock.com/mock/5934f07e91470c0ac101056b/sreen/boxOfficeMap',
+          boxOfficeProportion: 'http://www.easy-mock.com/mock/5934f07e91470c0ac101056b/sreen/boxOfficeProportion',
+          playbillProportion: 'http://www.easy-mock.com/mock/5934f07e91470c0ac101056b/sreen/playbillProportion',
+          yueyinghui: 'http://www.easy-mock.com/mock/5934f07e91470c0ac101056b/sreen/yueyinghuiBoxOffice',
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <noscript>
+      你需要开启 JavaScript
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>

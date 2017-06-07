@@ -1,0 +1,27 @@
+{
+  "name": "box-office-screen",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "echarts": "^3.6.1",
+    "loaders.css": "^0.1.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "timequeue": "^1.0.0"
+  },
+  "devDependencies": {
+    "node-sass-chokidar": "0.0.2",
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,19 @@
+.movieRank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  width: 640px;
+  height: 345px; }
+  .movieRank .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%; }
+    .movieRank .wrapper .inner {
+      margin-top: 20px;
+      overflow: hidden; }
+      .movieRank .wrapper .inner table {
+        transition: all .5s; }

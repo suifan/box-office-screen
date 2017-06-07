@@ -1,0 +1,27 @@
+.totalPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 140px;
+  margin-left: -180px;
+  width: 360px; }
+  .totalPrice .date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    color: #fff;
+    text-shadow: 0 0 5px #26B0FB; }
+    .totalPrice .date img {
+      margin-right: 5px; }
+  .totalPrice .total {
+    margin-top: 60px;
+    font-size: 40px;
+    color: RGBA(223, 247, 91, 1); }
+    .totalPrice .total em {
+      margin-right: 10px;
+      font-style: normal;
+      color: #fff; }

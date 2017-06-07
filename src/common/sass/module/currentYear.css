@@ -1,0 +1,59 @@
+.currentYear {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  width: 560px;
+  height: 500px; }
+  .currentYear .wrapper {
+    display: flex;
+    margin-top: 30px;
+    width: 531px;
+    height: 136px;
+    background: url("../images/currentYear.png") 0 0/100% no-repeat; }
+    .currentYear .wrapper .parent {
+      padding: 20px 0 20px 20px;
+      width: 160px; }
+      .currentYear .wrapper .parent .name {
+        font-size: 18px; }
+        .currentYear .wrapper .parent .name span {
+          margin-left: 6px;
+          font-size: 14px; }
+      .currentYear .wrapper .parent .boxOffice {
+        margin-top: 25px;
+        font-size: 18px; }
+    .currentYear .wrapper .child {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      padding: 30px 0; }
+      .currentYear .wrapper .child .item {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding-left: 8px; }
+        .currentYear .wrapper .child .item .name {
+          font-size: 15px; }
+          .currentYear .wrapper .child .item .name span {
+            margin-left: 2px;
+            font-size: 13px; }
+        .currentYear .wrapper .child .item .boxOffice {
+          margin-top: 19px; }
+    .currentYear .wrapper .name span {
+      color: #899ba9;
+      font-weight: bold; }
+    .currentYear .wrapper .boxOffice {
+      color: #27c37b;
+      font-weight: bold; }
+    .currentYear .wrapper .proportion {
+      margin-top: 10px;
+      color: #ffce6a;
+      font-size: 16px;
+      font-weight: bold; }
+
+.currentYear4Month {
+  display: flex;
+  flex: 1;
+  flex-direction: row; }
