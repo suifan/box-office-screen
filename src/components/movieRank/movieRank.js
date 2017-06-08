@@ -70,7 +70,7 @@ class MovieRank extends Component {
                 <tbody key={index}>
                 <tr className={`top-${index + 1}`}>
                   <td className="text-center" style={{padding: 0}}>{ index + 1 }</td>
-                  <td style={{ paddingRight: 0 }}>{ item.name.substring(0, 16) }</td>
+                  <td style={{ paddingRight: 0 }}>{ item.name.substring(0, 12) }</td>
                   <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ item.days }</td>
                   <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.totalBoxOffice) }</td>
                   <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.boxOffice) }</td>

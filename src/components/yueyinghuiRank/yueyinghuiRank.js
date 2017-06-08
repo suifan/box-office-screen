@@ -31,7 +31,7 @@ class YueyinghuiRank extends Component {
   render() {
     return (
       <div className="yueyinghuiRank">
-        <Title name="月影会票房"/>
+        <Title name="悦影绘票房"/>
         <div className="wrapper flex">
           <table className="table">
             <colgroup>

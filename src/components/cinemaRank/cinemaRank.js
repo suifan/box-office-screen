@@ -67,7 +67,7 @@ class CinemaRank extends Component {
                 <tbody key={index}>
                   <tr className={`top-${index + 1}`}>
                     <td className="text-center" style={{padding: 0}}>{ index + 1 }</td>
-                    <td style={{ paddingRight: 0 }}>{ item.cinemaName.substring(0, 18) }</td>
+                    <td style={{ paddingRight: 0 }}>{ item.cinemaName.substring(0, 15) }</td>
                     <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ item.yesterdayIndex }</td>
                     <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.boxOffice) }</td>
                     <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.headCount) }</td>

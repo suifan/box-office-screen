@@ -10,6 +10,7 @@
     "moment": "^2.18.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "swiper": "^3.4.2",
     "timequeue": "^1.0.0"
   },
   "devDependencies": {
