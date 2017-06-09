@@ -80,3 +80,18 @@ body, html {
 
 .pieChart {
   height: 100%; }
+
+.inner {
+  position: relative;
+  overflow: hidden; }
+
+.loop {
+  animation: slide 8s infinite cubic-bezier(1, 0, 0.5, 0); }
+
+@keyframes slide {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(-33.33333%); }
+  100% {
+    transform: translateY(-66.66667%); } }

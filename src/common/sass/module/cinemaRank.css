@@ -13,8 +13,7 @@
     margin-top: 30px;
     width: 100%; }
     .cinemaRank .wrapper .inner {
-      margin-top: 20px;
-      overflow: hidden; }
+      margin-top: 20px; }
       .cinemaRank .wrapper .inner table {
         transition: all .5s; }
 

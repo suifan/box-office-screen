@@ -8,7 +8,7 @@ import api from '../../api/api';
 
 import Pie from '../pie/pie';
 
-import { MovieColors } from '../map/options';
+import { COLOR } from '../map/options';
 
 import { ratioNumber } from '../../utils';
 
@@ -28,14 +28,14 @@ class boxOfficePie extends Component {
       let sum = sumBy(r.data, item => {
         return item.boxOffice
       })
-      this.setState({ result: r.data.map(item => {
+      this.setState({ result: r.data.map((item, index) => {
         return {
           name: `${item.name.substring(0, 8)}\n${ratioNumber(sum, item.boxOffice)}%`,
           // name: item.name,
           value: item.boxOffice,
           itemStyle: {
             normal: {
-              color: MovieColors[item.id % 100]
+              color: COLOR[index]
             }
           },
           label: {

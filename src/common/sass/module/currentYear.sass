@@ -8,19 +8,19 @@
   top: 70px
   left: 10px
   width: $currentYearWidth
-  height: 500px
+  height: 540px
   //background: rgba(0, 0, 0, .2)
 
   .wrapper
     display: flex
     margin-top: 30px
-    width: 531px
+    width: 640px
     height: 136px
     background: url("../images/currentYear.png") 0 0 / 100% no-repeat
 
     .parent
       padding: 20px 0 20px 20px
-      width: 160px
+      width: 220px
 
       .name
         font-size: 18px
@@ -28,8 +28,9 @@
           margin-left: 6px
           font-size: 14px
       .boxOffice
-        margin-top: 25px
-        font-size: 18px
+        padding-left: 40px
+        margin-top: 30px
+        font-size: 26px
 
     .child
       display: flex
@@ -46,10 +47,15 @@
         .name
           font-size: 15px
           span
-            margin-left: 2px
-            font-size: 13px
+            margin-left: 5px
+            font-size: 12px
         .boxOffice
+          padding-left: 10px
+          font-weight: normal
           margin-top: 19px
+          color: $color-boxOffice-child
+        .proportion
+          padding-left: 10px
 
     .name span
       color: $color-content

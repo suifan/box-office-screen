@@ -56,7 +56,7 @@ class MovieRank extends Component {
             </thead>
           </table>
           <div className="inner flex">
-            <table className="table normal" style={{transform: `translateY(-${this.state.slideY}%)`}}>
+            <table className="table normal loop">
               <colgroup>
                 <col width="10%" />
                 <col />
@@ -67,6 +67,20 @@ class MovieRank extends Component {
                 <col width="10%" />
               </colgroup>
               { !isEmpty(this.state.result) && this.state.result.map((item, index) => (
+                <tbody key={index}>
+                <tr className={`top-${index + 1}`}>
+                  <td className="text-center" style={{padding: 0}}>{ index + 1 }</td>
+                  <td style={{ paddingRight: 0 }}>{ item.name.substring(0, 12) }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ item.days }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.totalBoxOffice) }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.boxOffice) }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.session) }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.headCount) }</td>
+                </tr>
+                <tr className="sep-row"></tr>
+                </tbody>
+              )) }
+              { !isEmpty(this.state.result) && this.state.result.slice(0, 5).map((item, index) => (
                 <tbody key={index}>
                 <tr className={`top-${index + 1}`}>
                   <td className="text-center" style={{padding: 0}}>{ index + 1 }</td>

@@ -56,14 +56,14 @@ class Pie extends Component {
         silent: true
       }, {
         type: 'pie',
-        radius : '50%',
+        radius : '45%',
         label: {
           normal: {
             show: true,
             position: 'center',
             textStyle: {
               color: '#fff',
-              fontSize: 16
+              fontSize: 13
             }
           }
         },

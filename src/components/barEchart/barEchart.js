@@ -35,7 +35,9 @@ class BarEchart extends Component {
         }
       ];
       this.barChart.setOption({
-        xAxis: { data: this.props.chart.x },
+        xAxis: {
+          data: this.props.chart.x
+        },
         series
       })
     }
@@ -45,7 +47,7 @@ class BarEchart extends Component {
   }
   _init() {
     this.barChart.setOption({
-      grid: { left: '8%', right: 0 },
+      grid: { left: '6%', right: 0 },
       xAxis: {
         type : 'category',
         data: ["1月","2月","3月","4月","5月","6月", "7月", "8月", "9月", "10月", "11月", "12月"],
@@ -78,7 +80,8 @@ class BarEchart extends Component {
           formatter: function (value, index) {
             return bigNumber(value)
           }
-        }
+        },
+        splitNumber: 4
       },
       series: []
     })

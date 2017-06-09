@@ -52,7 +52,7 @@ class YueyinghuiRank extends Component {
             </thead>
           </table>
           <div className="inner flex">
-            <table className="table yueyinghui" style={{transform: `translateY(-${this.state.slideY}%)`}}>
+            <table className="table yueyinghui">
               <colgroup>
                 <col width="10%" />
                 <col width="35%" />
@@ -64,7 +64,20 @@ class YueyinghuiRank extends Component {
                 <tr>
                   <td className="text-center" style={{padding: 0}}><span className="serialNumber">{ index + 1 }</span></td>
                   <td style={{ paddingRight: 0 }}>{ item.cinemaName.substring(0, 18) }</td>
-                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ item.annualBoxOffice }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.annualBoxOffice) }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.boxOffice) }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.vip) }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.network) }</td>
+                </tr>
+                <tr className="sep-row"></tr>
+                </tbody>
+              )) }
+              { !isEmpty(this.state.result) && this.state.result.slice(0, 5).map((item, index) => (
+                <tbody key={index}>
+                <tr>
+                  <td className="text-center" style={{padding: 0}}><span className="serialNumber">{ index + 1 }</span></td>
+                  <td style={{ paddingRight: 0 }}>{ item.cinemaName.substring(0, 18) }</td>
+                  <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.annualBoxOffice) }</td>
                   <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.boxOffice) }</td>
                   <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.vip) }</td>
                   <td style={{ paddingLeft: 0, paddingRight: 0 }} className="text-center">{ bigNumber(item.network) }</td>

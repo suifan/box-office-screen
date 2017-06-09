@@ -10,7 +10,8 @@
     "moment": "^2.18.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "swiper": "^3.4.2",
+    "react-slick": "^0.14.11",
+    "slick-carousel": "^1.6.0",
     "timequeue": "^1.0.0"
   },
   "devDependencies": {

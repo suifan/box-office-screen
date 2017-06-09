@@ -66,7 +66,9 @@ class CurrentYear extends Component {
             </div>
           ) }
         </div>
-        <BarEchart width="100%" height="250px" chart={this.state.chart}/>
+        <div style={{width: '640px', height: '250px', paddingRight: '30px'}}>
+          <BarEchart width="100%" height="310px" chart={this.state.chart}/>
+        </div>
       </div>
     );
   }

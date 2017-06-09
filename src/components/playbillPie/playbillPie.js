@@ -8,7 +8,7 @@ import api from '../../api/api';
 
 import Pie from '../pie/pie';
 
-import { MovieColors } from '../map/options';
+import { COLOR } from '../map/options';
 
 import { ratioNumber } from '../../utils';
 
@@ -28,14 +28,14 @@ class PlaybillPie extends Component {
       let sum = sumBy(r.data, item => {
         return item.session
       })
-      this.setState({ result: r.data.map(item => {
+      this.setState({ result: r.data.map((item, index) => {
         return {
           name: `${item.name.substring(0, 8)}\n${ratioNumber(sum, item.session)}%`,
           // name: item.name,
           value: item.session,
           itemStyle: {
             normal: {
-              color: MovieColors[item.id % 100]
+              color: COLOR[index]
             }
           },
           label: {
