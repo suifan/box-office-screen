@@ -47,7 +47,7 @@ class BarEchart extends Component {
   }
   _init() {
     this.barChart.setOption({
-      grid: { left: '6%', right: 0 },
+      grid: { left: '20', right: 0 },
       xAxis: {
         type : 'category',
         data: ["1月","2月","3月","4月","5月","6月", "7月", "8月", "9月", "10月", "11月", "12月"],
@@ -78,7 +78,7 @@ class BarEchart extends Component {
             shadowBlur: 10
           },
           formatter: function (value, index) {
-            return bigNumber(value)
+            return value / 100000000 < 0 ? 0 : value / 100000000
           }
         },
         splitNumber: 4
@@ -88,8 +88,9 @@ class BarEchart extends Component {
   }
   render() {
     return (
-      <div className="currentYear4Month" style={{ width: this.props.width, height: this.props.height }}>
+      <div className="currentYear4Month" style={{ width: this.props.width, height: this.props.height, position: 'relative' }}>
         <div className="flex" ref="bar"></div>
+        <div style={{ position: 'absolute', right: '20px', top: '45px', fontSize: 12, color: '#ddd' }}>单位：亿</div>
       </div>
     );
   }

@@ -31,7 +31,7 @@ class App extends Component {
   }
   _setScale() {
     let ratio = window.innerWidth / 1920
-    document.body.setAttribute('style', `width: 1920px; height: 1080px; transform: scale(${ratio}); transform-origin: left top 0px;`)
+    document.body.setAttribute('style', `width: 1920px; height: 1200px; transform: scale(${ratio}); transform-origin: left top 0px;`)
   }
   render() {
     if (!this.state.load) {

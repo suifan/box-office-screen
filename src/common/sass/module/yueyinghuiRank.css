@@ -6,7 +6,7 @@
   top: 70px;
   right: 10px;
   width: 640px;
-  height: 270px; }
+  height: 280px; }
   .yueyinghuiRank .wrapper {
     display: flex;
     flex-direction: column;
@@ -20,10 +20,10 @@
 
 .yueyinghui tr td {
   padding: 0 15px;
-  color: #899ba9; }
+  color: #dfdfe0; }
 
 .yueyinghui .sep-row {
-  height: 10px; }
+  height: 13px; }
 
 .yueyinghui .serialNumber {
   display: inline-block;

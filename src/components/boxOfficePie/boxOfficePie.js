@@ -30,7 +30,7 @@ class boxOfficePie extends Component {
       })
       this.setState({ result: r.data.map((item, index) => {
         return {
-          name: `${item.name.substring(0, 8)}\n${ratioNumber(sum, item.boxOffice)}%`,
+          name: `TOP${index+1}\n\n${item.name.substring(0, 8)}\n${ratioNumber(sum, item.boxOffice)}%`,
           // name: item.name,
           value: item.boxOffice,
           itemStyle: {

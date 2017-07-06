@@ -92,8 +92,7 @@ body, html {
   width: 250px;
   color: #fff;
   font-size: 26px;
-  text-align: center;
-  text-shadow: 0 0 5px #26B0FB; }
+  text-align: center; }
 
 .title {
   display: flex;
@@ -107,18 +106,17 @@ body, html {
 
 .table {
   width: 100%;
-  font-size: 12px; }
+  font-size: 14px; }
   .table thead th {
     padding: 2px 15px;
-    font-size: 18px;
-    text-shadow: 0 0 5px #26B0FB; }
+    font-size: 18px; }
 
 .normal tr td {
-  padding: 10px 15px;
+  padding: 11px 15px;
   background: #1C2A40; }
 
 .normal .sep-row {
-  height: 15px; }
+  height: 11px; }
 
 .text-left {
   text-align: left; }
@@ -142,7 +140,7 @@ body, html {
   overflow: hidden; }
 
 .loop {
-  animation: slide 8s infinite cubic-bezier(1, 0, 0.5, 0); }
+  animation: slide 20s infinite cubic-bezier(1, 0, 0.65, 0); }
 
 @keyframes slide {
   0% {
@@ -165,42 +163,48 @@ body, html {
     display: flex;
     margin-top: 30px;
     width: 640px;
-    height: 136px;
+    height: 190px;
     background: url("../images/currentYear.png") 0 0/100% no-repeat; }
     .currentYear .wrapper .parent {
       padding: 20px 0 20px 20px;
       width: 220px; }
       .currentYear .wrapper .parent .name {
-        font-size: 18px; }
+        margin-top: 15px;
+        font-size: 22px; }
         .currentYear .wrapper .parent .name span {
           margin-left: 6px;
-          font-size: 14px; }
+          font-size: 16px;
+          color: #dfdfe0;
+          text-shadow: none; }
       .currentYear .wrapper .parent .boxOffice {
         padding-left: 40px;
-        margin-top: 30px;
-        font-size: 26px; }
+        margin-top: 35px;
+        font-size: 30px; }
     .currentYear .wrapper .child {
       display: flex;
       flex-direction: row;
       flex: 1;
-      padding: 30px 0; }
+      padding: 55px 0; }
       .currentYear .wrapper .child .item {
         display: flex;
         flex: 1;
         flex-direction: column;
         padding-left: 8px; }
         .currentYear .wrapper .child .item .name {
-          font-size: 15px; }
+          font-size: 16px; }
           .currentYear .wrapper .child .item .name span {
             margin-left: 5px;
-            font-size: 12px; }
+            font-size: 12px;
+            color: #dfdfe0;
+            text-shadow: none; }
         .currentYear .wrapper .child .item .boxOffice {
-          padding-left: 10px;
+          padding-left: 17px;
           font-weight: normal;
-          margin-top: 19px;
+          margin-top: 29px;
           color: #34f2f9; }
         .currentYear .wrapper .child .item .proportion {
-          padding-left: 10px; }
+          margin-top: 15px;
+          padding-left: 17px; }
     .currentYear .wrapper .name span {
       color: #899ba9;
       font-weight: bold; }
@@ -210,10 +214,10 @@ body, html {
     .currentYear .wrapper .proportion {
       margin-top: 10px;
       color: #ffed58;
-      font-size: 16px;
-      font-weight: bold; }
+      font-size: 16px; }
 
 .currentYear4Month {
+  margin-top: 40px;
   display: flex;
   flex: 1;
   flex-direction: row; }
@@ -224,9 +228,9 @@ body, html {
   align-items: center;
   position: absolute;
   left: 10px;
-  bottom: 0;
+  bottom: 20px;
   width: 640px;
-  height: 365px; }
+  height: 350px; }
   .cinemaRank .wrapper {
     display: flex;
     flex-direction: column;
@@ -273,9 +277,9 @@ body, html {
   align-items: center;
   position: absolute;
   right: 10px;
-  bottom: 0;
+  bottom: 20px;
   width: 640px;
-  height: 365px; }
+  height: 350px; }
   .movieRank .wrapper {
     display: flex;
     flex-direction: column;
@@ -295,7 +299,7 @@ body, html {
   top: 70px;
   right: 10px;
   width: 640px;
-  height: 270px; }
+  height: 280px; }
   .yueyinghuiRank .wrapper {
     display: flex;
     flex-direction: column;
@@ -309,10 +313,10 @@ body, html {
 
 .yueyinghui tr td {
   padding: 0 15px;
-  color: #899ba9; }
+  color: #dfdfe0; }
 
 .yueyinghui .sep-row {
-  height: 10px; }
+  height: 13px; }
 
 .yueyinghui .serialNumber {
   display: inline-block;
@@ -327,9 +331,9 @@ body, html {
 
 .map {
   position: absolute;
-  top: 280px;
+  top: 310px;
   left: 50%;
-  margin-left: -430px;
+  margin-left: -425px;
   width: 870px;
   height: 700px; }
 
@@ -371,7 +375,7 @@ body, html {
   align-items: center;
   position: absolute;
   right: 350px;
-  top: 355px;
+  top: 430px;
   width: 250px;
   height: 280px; }
 
@@ -381,7 +385,7 @@ body, html {
   align-items: center;
   position: absolute;
   right: 60px;
-  top: 355px;
+  top: 430px;
   width: 250px;
   height: 280px; }
 
@@ -400,8 +404,7 @@ body, html {
     align-items: center;
     justify-content: center;
     font-size: 21px;
-    color: #fff;
-    text-shadow: 0 0 5px #26B0FB; }
+    color: #fff; }
     .totalPrice .date img {
       margin-right: 5px; }
   .totalPrice .total {

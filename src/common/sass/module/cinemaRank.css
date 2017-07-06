@@ -4,9 +4,9 @@
   align-items: center;
   position: absolute;
   left: 10px;
-  bottom: 0;
+  bottom: 20px;
   width: 640px;
-  height: 365px; }
+  height: 350px; }
   .cinemaRank .wrapper {
     display: flex;
     flex-direction: column;

@@ -36,8 +36,7 @@ body, html {
   width: 250px;
   color: #fff;
   font-size: 26px;
-  text-align: center;
-  text-shadow: 0 0 5px #26B0FB; }
+  text-align: center; }
 
 .title {
   display: flex;
@@ -51,18 +50,17 @@ body, html {
 
 .table {
   width: 100%;
-  font-size: 12px; }
+  font-size: 14px; }
   .table thead th {
     padding: 2px 15px;
-    font-size: 18px;
-    text-shadow: 0 0 5px #26B0FB; }
+    font-size: 18px; }
 
 .normal tr td {
-  padding: 10px 15px;
+  padding: 11px 15px;
   background: #1C2A40; }
 
 .normal .sep-row {
-  height: 15px; }
+  height: 11px; }
 
 .text-left {
   text-align: left; }
@@ -86,7 +84,7 @@ body, html {
   overflow: hidden; }
 
 .loop {
-  animation: slide 8s infinite cubic-bezier(1, 0, 0.5, 0); }
+  animation: slide 20s infinite cubic-bezier(1, 0, 0.65, 0); }
 
 @keyframes slide {
   0% {

@@ -22,8 +22,10 @@ class Pie extends Component {
     this.pieChart.setOption({ series: option.series });
     // 轮播切换
     this._slide();
+    this.slide && clearInterval(this.slide)
     this.slide = setInterval(this._slide.bind(this), window.config.pieToggleTime);
   }
+  // 销毁后，注销掉 setInterval
   _slide(name) {
     let option = this.pieChart.getOption();
     option.series[0].data = map(option.series[0].data, (o, index) => {

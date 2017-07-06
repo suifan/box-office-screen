@@ -30,7 +30,7 @@ class PlaybillPie extends Component {
       })
       this.setState({ result: r.data.map((item, index) => {
         return {
-          name: `${item.name.substring(0, 8)}\n${ratioNumber(sum, item.session)}%`,
+          name: `TOP${index+1}\n\n${item.name.substring(0, 8)}\n${ratioNumber(sum, item.session)}%`,
           // name: item.name,
           value: item.session,
           itemStyle: {
