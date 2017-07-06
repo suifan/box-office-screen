@@ -4,7 +4,7 @@ import echarts from 'echarts';
 
 // utils
 import { max, fill } from 'lodash';
-import { bigNumber } from '../../utils'
+// import { bigNumber } from '../../utils'
 
 class BarEchart extends Component {
   componentDidMount() {
