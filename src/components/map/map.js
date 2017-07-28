@@ -107,6 +107,7 @@ class Map extends Component {
     this.mapChart.setOption({
       geo: {
         map: 'chinas',
+        zlevel: 100,
         itemStyle: {
           normal: {
             areaColor: 'RGBA(24, 146, 242, .5)',

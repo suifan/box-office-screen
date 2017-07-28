@@ -17,6 +17,7 @@ class BarEchart extends Component {
       let series = [
         {
           type: 'bar',
+          zlevel: 1,
           itemStyle: {
             normal: { borderColor: '#656E89', color: 'transparent', barBorderRadius: [20, 20, 0, 0] }
           },
@@ -27,6 +28,7 @@ class BarEchart extends Component {
         },
         {
           type: 'bar',
+          zlevel: 2,
           itemStyle: {
             normal: { color: '#1892F2', barBorderRadius: [20, 20, 0, 0] }
           },
@@ -88,7 +90,7 @@ class BarEchart extends Component {
   }
   render() {
     return (
-      <div className="currentYear4Month" style={{ width: this.props.width, height: this.props.height, position: 'relative' }}>
+      <div className="currentYear4Month" style={{ width: '580px', height: this.props.height, position: 'relative' }}>
         <div className="flex" ref="bar"></div>
         <div style={{ position: 'absolute', right: '20px', top: '45px', fontSize: 12, color: '#ddd' }}>单位：亿</div>
       </div>

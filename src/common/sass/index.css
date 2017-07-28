@@ -329,13 +329,18 @@ body, html {
   vertical-align: middle;
   border-radius: 10px; }
 
-.map {
+.boxOfficeMap {
   position: absolute;
   top: 310px;
   left: 50%;
   margin-left: -425px;
   width: 870px;
-  height: 700px; }
+  height: 700px;
+  z-index: 10; }
+
+.map {
+  width: 100%;
+  height: 100%; }
 
 .images {
   position: absolute;
@@ -375,7 +380,7 @@ body, html {
   align-items: center;
   position: absolute;
   right: 350px;
-  top: 430px;
+  top: 420px;
   width: 250px;
   height: 280px; }
 
@@ -385,7 +390,7 @@ body, html {
   align-items: center;
   position: absolute;
   right: 60px;
-  top: 430px;
+  top: 420px;
   width: 250px;
   height: 280px; }
 

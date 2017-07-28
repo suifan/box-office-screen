@@ -51,12 +51,12 @@ class App extends Component {
       <div className="App">
         <div className="h1"><span>运营监控中心</span></div>
         <TotalPrice/>
-        <BoxOfficeMap/>
         <CurrentYear/>
         <CinemaRank/>
         <MovieRank/>
         <YueyinghuiRank/>
         <BoxOfficePie/>
+        <BoxOfficeMap/>
         <PlaybillPie/>
       </div>
     );
